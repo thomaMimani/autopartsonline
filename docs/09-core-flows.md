@@ -4,8 +4,8 @@ How the core feature works end to end: a vendor uploads a file, the system links
 the catalog, and a customer finds a part that fits by VIN. GitHub renders these Mermaid
 diagrams as pictures.
 
-Stack assumed: one Laravel app on Postgres. Storefront in Inertia React with SSR. Admin and
-vendor panels in Filament. Background work runs on Laravel's database queue and scheduler.
+Stack assumed: one Laravel app on Postgres. Storefront and the admin and vendor panels are
+all Inertia React (storefront with SSR). No Filament. Background work runs on Laravel's database queue and scheduler.
 
 ## 1. The whole system on one page
 
@@ -18,9 +18,9 @@ flowchart LR
     end
 
     subgraph App["Laravel app"]
-        VP["Vendor panel<br/>Filament"]
+        VP["Vendor panel<br/>Inertia React"]
         SF["Storefront<br/>Inertia React + SSR"]
-        AP["Admin panel<br/>Filament"]
+        AP["Admin panel<br/>Inertia React"]
         Q["Queue worker<br/>import, match, fitment jobs"]
         S["Scheduler<br/>daily stock pull, monthly refresh"]
     end

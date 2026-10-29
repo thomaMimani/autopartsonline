@@ -19,11 +19,19 @@ Market Albania. Founder is the sole developer and the merchant (not a marketplac
 Three panels: admin/helpdesk, customer, vendor. Vendor data arrives by their API or
 CSV/XLSX upload. Catalog linking and the fitment index are built **on upload**; the
 only live catalog call during a customer search is the VIN decode. Cash on delivery at
-launch, transport later. Stack: Laravel + Postgres, Inertia React SSR storefront,
-Filament admin/vendor panels. Flows: `docs/09-core-flows.md`. Architecture: `docs/08-mvp-architecture-albania.md`.
+launch, transport later. Stack: Laravel 12 + Postgres; storefront and admin/vendor panels all in
+Inertia React (storefront with SSR). **No Filament.** Flows: `docs/09-core-flows.md`. Architecture: `docs/08-mvp-architecture-albania.md`.
 
 ## Current phase
-About to build the MVP (6-week order in doc 08). Read `docs/README.md` first. Decisions already taken are logged in
+Building the MVP step by step: `docs/10-build-steps.md`. Step 1 (fitment core) is done.
+
+## Code map
+- `app/Catalog/` the catalog client: interface, `FakeCatalogClient` (invented fixtures), `ApiProfileCatalogClient`
+- `app/Services/` `VendorImporter` + `VendorFileReader`, `MatchingService` (ladder), `FitmentService`,
+  `CatalogStore` (only writer to the `catalog` schema), `VinResolver`, `PartSearch` (DB only), `BrandResolver`
+- `app/Jobs/` `ImportVendorFile`, `MatchPart`, `FetchArticleFitment`
+- `app/Console/Commands/` `catalog:sync-brands`, `vendor:import`, `catalog:vin`, `catalog:refresh-fitment`, `catalog:purge`
+- Tests run on Postgres database `autoparts_test` (`php artisan test`). Read `docs/README.md` first. Decisions already taken are logged in
 `docs/02-discussion-prep.md` under "Decision log"; do not re-open them without the
 founder asking.
 

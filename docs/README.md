@@ -11,6 +11,7 @@
 | 07 | [Stress-test report](07-stress-test-report.md) | First run of the stress-test skills against 01, 04 and 06. Honest findings |
 | 08 | [MVP architecture, Albania](08-mvp-architecture-albania.md) | The build plan: link-on-upload fitment index, schema, panels, Albanian vocabulary and SEO, 6-week order |
 | 09 | [Core flows](09-core-flows.md) | Diagrams: system, vendor import, matching ladder, fitment, VIN, search to order, order lifecycle, data freshness, tables |
+| 10 | [Build steps](10-build-steps.md) | The MVP in six working steps, what each delivers, and status |
 | ref | [AutoPartsAPI v2 guide](reference/autopartsapi_v2_practical_guide.md) | The catalog API reference we build on |
 | ref | [AutoPartsAPI terms analysis](reference/autopartsapi-terms-analysis.md) | What the provider's terms allow, design changes, fallback, questions to send |
 

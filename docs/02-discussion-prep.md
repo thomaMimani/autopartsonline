@@ -113,8 +113,10 @@ See `03-supplier-questionnaire.md`. The three that decide go/no-go:
 | 2026-10-29 | Vendor links by their own API if they have one, else CSV/XLSX upload | | Founder |
 | 2026-10-29 | Catalog linking happens **on upload** (fitment index in our DB), not at search time. See doc 08 | Speed, quota, resilience | Claude (proposal) |
 | 2026-10-29 | Transport handled later; cash on delivery at launch | | Founder |
-| 2026-10-29 | Stack: one Laravel app on Postgres; storefront Inertia React with SSR; admin and vendor panels in Filament; database queue. Next.js deferred | Solo dev, one deploy, panels are CRUD | Founder |
+| 2026-10-29 | Stack: one Laravel app on Postgres; storefront Inertia React with SSR; admin and vendor panels in Filament (superseded: no Filament, see below); database queue. Next.js deferred | Solo dev, one deploy, panels are CRUD | Founder |
 | 2026-10-29 | Matches stored in a shared `part_matches` table (brand + normalised number → article), reused across vendors | Zero API calls for parts already matched | Claude (proposal) |
 | 2026-10-29 | API terms read: fitment index and VIN cache need MEGA plan or higher; API-derived data lives in a separate `catalog` schema; no catalog images and no catalog-derived content on indexed pages until confirmed in writing | Terms §5, §6, §7 | Claude (proposal) |
 | 2026-10-29 | **MEGA plan in production.** Link-on-upload index design stays. Before MEGA is active, nothing from the API is stored: explore with curl, develop against a fake catalog adapter with hand-written fixtures | Terms §5 apply to every environment, not only production | Founder |
+| 2026-10-29 | **No Filament.** Admin and vendor panels are Inertia React, like the storefront | Founder's choice | Founder |
+| 2026-10-29 | Build step by step, each step working and tested (doc 10) | | Founder |
 | | Category scope: wear parts (proposed) | | |
