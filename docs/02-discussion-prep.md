@@ -115,4 +115,5 @@ See `03-supplier-questionnaire.md`. The three that decide go/no-go:
 | 2026-10-29 | Transport handled later; cash on delivery at launch | | Founder |
 | 2026-10-29 | Stack: one Laravel app on Postgres; storefront Inertia React with SSR; admin and vendor panels in Filament; database queue. Next.js deferred | Solo dev, one deploy, panels are CRUD | Founder |
 | 2026-10-29 | Matches stored in a shared `part_matches` table (brand + normalised number → article), reused across vendors | Zero API calls for parts already matched | Claude (proposal) |
+| 2026-10-29 | API terms read: fitment index and VIN cache need MEGA plan or higher; API-derived data lives in a separate `catalog` schema; no catalog images and no catalog-derived content on indexed pages until confirmed in writing | Terms §5, §6, §7 | Claude (proposal) |
 | | Category scope: wear parts (proposed) | | |

@@ -12,6 +12,7 @@
 | 08 | [MVP architecture, Albania](08-mvp-architecture-albania.md) | The build plan: link-on-upload fitment index, schema, panels, Albanian vocabulary and SEO, 6-week order |
 | 09 | [Core flows](09-core-flows.md) | Diagrams: system, vendor import, matching ladder, fitment, VIN, search to order, order lifecycle, data freshness, tables |
 | ref | [AutoPartsAPI v2 guide](reference/autopartsapi_v2_practical_guide.md) | The catalog API reference we build on |
+| ref | [AutoPartsAPI terms analysis](reference/autopartsapi-terms-analysis.md) | What the provider's terms allow, design changes, fallback, questions to send |
 
 ## Vocabulary
 

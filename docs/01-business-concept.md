@@ -59,7 +59,7 @@ Recommended starting model (see doc 02 for the alternatives):
 | A4 | Wrong-fit returns can be kept under ~5 percent of orders with the question flow plus a "fits-or-free-return" promise | Economics | Low until measured | Concierge MVP tracks every return reason |
 | A5 | Customers trust a new shop enough to pay online before delivery | Trust | Market-dependent (cash on delivery may be needed) | Concierge MVP conversion, payment method mix |
 | A6 | API cost per order (VIN decode quota + article calls) stays under a small fraction of gross margin | Economics | Medium, pricing not yet seen | Get plan pricing; model calls per order (doc 05) |
-| A7 | Catalog licence allows us to cache and display the data in a public shop | Legal | Unknown | Read apiprofile terms; ask provider in writing |
+| A7 | Catalog licence allows us to cache and display the data in a public shop | Legal | **Partly answered 2026-10-29:** display in a shop is allowed on paid plans; storing a fitment index needs MEGA or higher; images and SEO-indexed pages need separate confirmation. See `reference/autopartsapi-terms-analysis.md` | Send the drafted questions to the provider |
 
 **Riskiest assumption: A1 combined with A2.** If drivers will not self-serve, there is no business.
 If VIN-in does not give one-part-out reliably, the core promise breaks and we are just another

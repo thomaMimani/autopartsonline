@@ -36,3 +36,6 @@ founder asking.
 - Docs are Markdown under `docs/`, numbered in reading order.
 - Never commit API keys. Use `.env` (ignored) and keep `.env.example` current.
 - When application code is added, keep catalog API calls server-side only.
+- API-derived data goes in the Postgres `catalog` schema only, so it can be purged (terms §5).
+  Storing it requires the MEGA plan or higher. No catalog images until cleared. See
+  `docs/reference/autopartsapi-terms-analysis.md`.

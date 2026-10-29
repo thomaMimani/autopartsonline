@@ -28,7 +28,13 @@ article) and store `(article_id, vehicle_id)` rows. A vendor with 5,000 SKUs cos
 The vehicle-centric alternative (for every vehicle × category, list articles) needs tens of
 thousands of calls and most results would be parts the vendor does not stock. Do not do it.
 
-Licence note: this stores catalog data (article names, OE numbers, fitment lists). Confirm in
+> **Terms checked 2026-10-29:** storing this index is allowed only on the MEGA plan or
+> higher, and API-derived data must be deleted within 30 days of a downgrade. Keep it in a
+> separate `catalog` schema. No catalog images or catalog-derived content on indexed pages
+> until the provider confirms in writing. Fallback without storage is described in
+> `reference/autopartsapi-terms-analysis.md`.
+
+Licence note (original): this stores catalog data (article names, OE numbers, fitment lists). Confirm in
 writing with the provider that caching for a shop is allowed (doc 01, A7). If they say no, the
 same architecture works with a 24-hour cache TTL and background refresh; only the retention
 changes.
