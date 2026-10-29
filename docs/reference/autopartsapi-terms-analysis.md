@@ -48,6 +48,19 @@ whenever the provider announces changes.
 6. **Customer notice.** On the product page: "Fitment data is reference information. Our
    technician checks every order before it ships."
 
+## Decision (2026-10-29): MEGA in production
+
+The storage rules apply to any environment, including your laptop and staging. Until MEGA is
+active:
+
+- Explore the API with curl and the Playground. Note match rates and observations in our own
+  words, but do not save responses.
+- Build the import and search code against a `FakeCatalogClient` that returns hand-written
+  fixtures with invented IDs. The real client and the fake share one interface.
+- Do not commit real API responses as test fixtures.
+- Switch on MEGA the day the first real import should write to the `catalog` schema. Expect
+  that around week 2 of the build order. Run the 50-VIN test then.
+
 ## Fallback if we start below MEGA (no retention allowed)
 
 The match can happen at request time, because the vendor's brand and part number are our own

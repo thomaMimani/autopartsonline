@@ -37,5 +37,6 @@ founder asking.
 - Never commit API keys. Use `.env` (ignored) and keep `.env.example` current.
 - When application code is added, keep catalog API calls server-side only.
 - API-derived data goes in the Postgres `catalog` schema only, so it can be purged (terms §5).
-  Storing it requires the MEGA plan or higher. No catalog images until cleared. See
+  Storing it requires the MEGA plan or higher (production will run on MEGA). Before MEGA
+  is active, develop against a fake catalog client; never commit real API responses. No catalog images until cleared. See
   `docs/reference/autopartsapi-terms-analysis.md`.
