@@ -19,7 +19,8 @@ Market Albania. Founder is the sole developer and the merchant (not a marketplac
 Three panels: admin/helpdesk, customer, vendor. Vendor data arrives by their API or
 CSV/XLSX upload. Catalog linking and the fitment index are built **on upload**; the
 only live catalog call during a customer search is the VIN decode. Cash on delivery at
-launch, transport later. Architecture: `docs/08-mvp-architecture-albania.md`.
+launch, transport later. Stack: Laravel + Postgres, Inertia React SSR storefront,
+Filament admin/vendor panels. Flows: `docs/09-core-flows.md`. Architecture: `docs/08-mvp-architecture-albania.md`.
 
 ## Current phase
 About to build the MVP (6-week order in doc 08). Read `docs/README.md` first. Decisions already taken are logged in

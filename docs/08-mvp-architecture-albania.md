@@ -35,6 +35,11 @@ changes.
 
 ## 2. Stack (one deployable, one database)
 
+> **Superseded on 2026-10-29:** the stack is one Laravel app on Postgres, storefront in
+> Inertia React with SSR, admin and vendor panels in Filament, Laravel database queue and
+> scheduler. The Next.js notes below are kept for reference. Matches are stored in a shared
+> `part_matches` table keyed by brand + normalised number. Flows: `docs/09-core-flows.md`.
+
 - **Next.js (App Router, TypeScript)** for storefront, the three panels, and API routes. One
   repo, one deploy. Server components keep the catalog key server-side by construction.
 - **PostgreSQL** for everything, including the cache and the job queue at MVP stage. Add Redis

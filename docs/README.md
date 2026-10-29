@@ -10,6 +10,7 @@
 | 06 | [Roadmap](06-roadmap.md) | Phases, gates, what we do before writing code |
 | 07 | [Stress-test report](07-stress-test-report.md) | First run of the stress-test skills against 01, 04 and 06. Honest findings |
 | 08 | [MVP architecture, Albania](08-mvp-architecture-albania.md) | The build plan: link-on-upload fitment index, schema, panels, Albanian vocabulary and SEO, 6-week order |
+| 09 | [Core flows](09-core-flows.md) | Diagrams: system, vendor import, matching ladder, fitment, VIN, search to order, order lifecycle, data freshness, tables |
 | ref | [AutoPartsAPI v2 guide](reference/autopartsapi_v2_practical_guide.md) | The catalog API reference we build on |
 
 ## Vocabulary

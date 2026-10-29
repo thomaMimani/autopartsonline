@@ -113,4 +113,6 @@ See `03-supplier-questionnaire.md`. The three that decide go/no-go:
 | 2026-10-29 | Vendor links by their own API if they have one, else CSV/XLSX upload | | Founder |
 | 2026-10-29 | Catalog linking happens **on upload** (fitment index in our DB), not at search time. See doc 08 | Speed, quota, resilience | Claude (proposal) |
 | 2026-10-29 | Transport handled later; cash on delivery at launch | | Founder |
+| 2026-10-29 | Stack: one Laravel app on Postgres; storefront Inertia React with SSR; admin and vendor panels in Filament; database queue. Next.js deferred | Solo dev, one deploy, panels are CRUD | Founder |
+| 2026-10-29 | Matches stored in a shared `part_matches` table (brand + normalised number → article), reused across vendors | Zero API calls for parts already matched | Claude (proposal) |
 | | Category scope: wear parts (proposed) | | |
