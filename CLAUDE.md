@@ -14,8 +14,15 @@ Catalog data comes from AutoPartsAPI v2 (apiprofile.com). Practical guide:
 - **Catalog vehicle** = a `vehicleId` (an engine/body variant), not a model.
 - **Article** = a catalog part record (`articleId`). An **offer** = a vendor's price + stock for an article.
 
+## Decisions taken (2026-10-29)
+Market Albania. Founder is the sole developer and the merchant (not a marketplace).
+Three panels: admin/helpdesk, customer, vendor. Vendor data arrives by their API or
+CSV/XLSX upload. Catalog linking and the fitment index are built **on upload**; the
+only live catalog call during a customer search is the VIN decode. Cash on delivery at
+launch, transport later. Architecture: `docs/08-mvp-architecture-albania.md`.
+
 ## Current phase
-Planning. Read `docs/README.md` first. Decisions already taken are logged in
+About to build the MVP (6-week order in doc 08). Read `docs/README.md` first. Decisions already taken are logged in
 `docs/02-discussion-prep.md` under "Decision log"; do not re-open them without the
 founder asking.
 

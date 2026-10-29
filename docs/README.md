@@ -9,6 +9,7 @@
 | 05 | [Technical architecture](05-technical-architecture.md) | How the system wraps the catalog API, vendor data, and checkout |
 | 06 | [Roadmap](06-roadmap.md) | Phases, gates, what we do before writing code |
 | 07 | [Stress-test report](07-stress-test-report.md) | First run of the stress-test skills against 01, 04 and 06. Honest findings |
+| 08 | [MVP architecture, Albania](08-mvp-architecture-albania.md) | The build plan: link-on-upload fitment index, schema, panels, Albanian vocabulary and SEO, 6-week order |
 | ref | [AutoPartsAPI v2 guide](reference/autopartsapi_v2_practical_guide.md) | The catalog API reference we build on |
 
 ## Vocabulary

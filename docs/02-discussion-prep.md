@@ -105,7 +105,12 @@ See `03-supplier-questionnaire.md`. The three that decide go/no-go:
 | Date | Decision | Why | Who |
 |---|---|---|---|
 | 2026-10-29 | Use the word **vendor** for stock partners and **brand** for the catalog's `supplier` | Avoid confusion with the API's naming | Claude (proposal) |
-| | Market: ___ | | |
-| | Launch customer: ___ | | |
-| | Model: drop-ship shop (proposed) | | |
+| 2026-10-29 | Market: **Albania** | Founder's market; used-import fleet; VIN is the key | Founder |
+| 2026-10-29 | Launch customer: drivers who buy for themselves or their mechanic; technician behind the shop | | Founder |
+| 2026-10-29 | Model: **we are the merchant**, drop-ship from vendors, not a marketplace | | Founder |
+| 2026-10-29 | Founder is the developer; MVP now, about 6 weeks | Capacity | Founder |
+| 2026-10-29 | Three panels: admin/helpdesk, customer, vendor | | Founder |
+| 2026-10-29 | Vendor links by their own API if they have one, else CSV/XLSX upload | | Founder |
+| 2026-10-29 | Catalog linking happens **on upload** (fitment index in our DB), not at search time. See doc 08 | Speed, quota, resilience | Claude (proposal) |
+| 2026-10-29 | Transport handled later; cash on delivery at launch | | Founder |
 | | Category scope: wear parts (proposed) | | |
